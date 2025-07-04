@@ -1,0 +1,37 @@
+h1{
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9rem;
+}
+
+span{
+    font-size: 48px;
+    font-family: sans-serif;
+    color: #6276fc;
+}
+
+button{
+    width: 80px;
+    height: 40px;
+    font-size: 14px;
+    font-family: sans-serif;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 0.9s;
+
+    &:hover{
+        background-color: #6276fc;
+        color: black;
+        transform: scale(0.8);
+    }
+}

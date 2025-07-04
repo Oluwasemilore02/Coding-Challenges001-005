@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Simple Tabs</title>
+</head>
+
+<body>
+  <main class="tabs">
+    <div class="tab-buttons">
+      <button class="tab-btn active"  data-tab="home">Home</button>
+      <button class="tab-btn"          data-tab="about">About</button>
+      <button class="tab-btn"          data-tab="contact">Contact</button>
+    </div>
+
+    <section id="home"     class="tab-content">This is the Home Page</section>
+    <section id="about"    class="tab-content hidden">  We build cool stuff.</section>
+    <section id="contact"  class="tab-content hidden">  Go find Work</section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.tabs {
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: system-ui, sans-serif;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tab-btn {
+    flex: 1 1 0;
+    padding: .75rem 1rem;
+    border: none;
+    border-radius: .5rem .5rem 0 0;
+    background: #eee;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s;
+  }
+  
+  .tab-btn.active {
+    background: dodgerblue;
+    color: #fff;
+  }
+  
+  .tab-content {
+    padding: 1.25rem;
+    border: 2px solid dodgerblue;
+    border-radius: 0 .5rem ;
+    min-height: 120px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
