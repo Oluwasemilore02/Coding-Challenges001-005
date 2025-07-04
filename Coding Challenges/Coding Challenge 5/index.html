@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Contact Form Validation</title>
+</head>
+
+<body>
+  <main class="contact">
+    <h2>Contact Us</h2>
+
+    <!-- General‑form error -->
+    <p id="form-error" class="error-message hidden" aria-live="assertive">
+      Please fix the errors below.
+    </p>
+
+    <form id="contact-form" novalidate>
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="off" />
+      <span id="email-error" class="error-message" aria-live="assertive">
+        Please enter a valid email address.
+      </span>
+
+      <!-- Password -->
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="off" />
+      <span id="password-error" class="error-message" aria-live="assertive">
+        Password must be at least 6 characters.
+      </span>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
