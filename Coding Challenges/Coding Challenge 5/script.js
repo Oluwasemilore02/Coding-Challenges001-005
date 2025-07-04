@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const passErr = document.getElementById("password-error");
   const formErr = document.getElementById("form-error");
 
-  /* utility helpers */
   const showErr = (msgEl, inputEl) => {
     msgEl.classList.remove("hidden");
     inputEl.classList.add("invalid");
@@ -37,26 +36,23 @@ document.addEventListener("DOMContentLoaded", () => {
     return true;
   };
 
-  /* live feedback while typing */
   emailInput.addEventListener("input", validateEmail);
   passInput.addEventListener("input", validatePassword);
 
-  /* ---- form submission --------------------------------------- */
   form.addEventListener("submit", (e) => {
-    e.preventDefault(); // block actual submit for demo
+    e.preventDefault(); 
 
     const emailOk = validateEmail();
     const passOk = validatePassword();
 
     if (!emailOk || !passOk) {
       formErr.classList.remove("hidden");
-      return; // short‑circuit
+      return; 
     }
     formErr.classList.add("hidden");
 
-    // at this point everything's valid – emulate success flow
     console.log("✅ Form submitted!");
-    alert("Form submitted! 🔥"); // dev feedback
+    alert("Form submitted!"); 
     form.reset();
   });
 });
